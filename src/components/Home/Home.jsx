@@ -4,7 +4,7 @@ import { Label } from "reactstrap";
 const Home = ({ user, isAuthenticated }) => {
   return (
     <Label className="my-5">
-      <h3>{`Hello  ${user.firstName} ${user.lastName}`}</h3>
+      <h3>{(user===true)?`Hello  ${user.firstName} ${user.lastName}`: 'Please login or signup'}</h3>
     </Label>
   );
 };
